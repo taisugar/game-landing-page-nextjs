@@ -32,6 +32,6 @@
       rgba(0, 0, 0, 0.44) 50.53%,
       rgba(0, 0, 0, 0.83) 82.93%
     ),
-    url("/bg.jpeg") no-repeat center;
+    url('/bg.jpeg') no-repeat center;
   background-size: cover;
 }

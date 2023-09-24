@@ -1,15 +1,15 @@
-import cc from "clsx";
-import { Bebas_Neue } from "next/font/google";
-import Image from "next/image";
-import Marquee from "react-fast-marquee";
-import CoronaBlackPlayIcon from "../../../public/assets/icons/corona-black-play.svg";
-import CoronaWhitePlayIcon from "../../../public/assets/icons/corona-white-play.svg";
-import CoronaIcon from "../../../public/assets/icons/corona.svg";
-import styles from "./RegisterNow.module.css";
+import cc from 'clsx';
+import { Bebas_Neue } from 'next/font/google';
+import Image from 'next/image';
+import Marquee from 'react-fast-marquee';
+import CoronaBlackPlayIcon from '../../../public/assets/icons/corona-black-play.svg';
+import CoronaWhitePlayIcon from '../../../public/assets/icons/corona-white-play.svg';
+import CoronaIcon from '../../../public/assets/icons/corona.svg';
+import styles from './RegisterNow.module.css';
 
 const bebas_neue = Bebas_Neue({
-  weight: ["400"],
-  subsets: ["latin"],
+  weight: ['400'],
+  subsets: ['latin']
 });
 const RegisterNowComponent = () => {
   return (
@@ -30,7 +30,7 @@ const RegisterNowComponent = () => {
           height={525}
         />
         <div className='absolute bottom-6 left-1/2 -translate-x-1/2'>
-          <button className={styles["btn"]} type='button'>
+          <button className={styles['btn']} type='button'>
             <svg
               xmlns='http://www.w3.org/2000/svg'
               viewBox='0 0 317 64'
@@ -54,7 +54,7 @@ const RegisterNowComponent = () => {
                 </linearGradient>
               </defs>
             </svg>
-            <span className={cc(bebas_neue.className, styles["btn-text"])}>
+            <span className={cc(bebas_neue.className, styles['btn-text'])}>
               Register Now
             </span>
           </button>

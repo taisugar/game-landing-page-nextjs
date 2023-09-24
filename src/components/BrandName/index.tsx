@@ -1,10 +1,8 @@
-import styles from "./BrandName.module.css";
-import cc from "clsx";
-import Image from "next/image";
-import TwitchBrand from "../../../public/assets/brandname/twitch.svg";
-import RobloxBrand from "../../../public/assets/brandname/roblox.svg";
-import ChessBrand from "../../../public/assets/brandname/chess.svg";
-import GamesradarBrand from "../../../public/assets/brandname/gamesradar+.svg";
+import Image from 'next/image';
+import ChessBrand from '../../../public/assets/brandname/chess.svg';
+import GamesradarBrand from '../../../public/assets/brandname/gamesradar+.svg';
+import RobloxBrand from '../../../public/assets/brandname/roblox.svg';
+import TwitchBrand from '../../../public/assets/brandname/twitch.svg';
 
 const BrandNameComponent = () => {
   return (

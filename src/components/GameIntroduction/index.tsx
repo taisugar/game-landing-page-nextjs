@@ -1,11 +1,11 @@
-import cc from "clsx";
-import { Nunito } from "next/font/google";
-import Image from "next/image";
-import styles from "./GameIntroduction.module.css";
+import cc from 'clsx';
+import { Nunito } from 'next/font/google';
+import Image from 'next/image';
+import styles from './GameIntroduction.module.css';
 
 const nunito = Nunito({
-  weight: ["200", "400", "700"],
-  subsets: ["latin"],
+  weight: ['200', '400', '700'],
+  subsets: ['latin']
 });
 const GameIntroductionComponent = () => {
   return (
@@ -19,11 +19,11 @@ const GameIntroductionComponent = () => {
         />
       </div>
       <div data-aos='fade-left' className='mt-10'>
-        <section className={cc("w-[547px]", nunito.className)}>
-          <details className={styles["according"]}>
-            <summary className={styles["according-summary"]}>
+        <section className={cc('w-[547px]', nunito.className)}>
+          <details className={styles['according']}>
+            <summary className={styles['according-summary']}>
               <svg
-                className={styles["toggled"]}
+                className={styles['toggled']}
                 xmlns='http://www.w3.org/2000/svg'
                 width='22'
                 height='19'
@@ -45,10 +45,10 @@ const GameIntroductionComponent = () => {
               when games I&apos;m energized for emerge.
             </p>
           </details>
-          <details className={styles["according"]}>
-            <summary className={styles["according-summary"]}>
+          <details className={styles['according']}>
+            <summary className={styles['according-summary']}>
               <svg
-                className={styles["toggled"]}
+                className={styles['toggled']}
                 xmlns='http://www.w3.org/2000/svg'
                 width='22'
                 height='19'
@@ -69,10 +69,10 @@ const GameIntroductionComponent = () => {
               vitae temporibus totam illum ipsam.
             </p>
           </details>
-          <details className={styles["according"]}>
-            <summary className={styles["according-summary"]}>
+          <details className={styles['according']}>
+            <summary className={styles['according-summary']}>
               <svg
-                className={styles["toggled"]}
+                className={styles['toggled']}
                 xmlns='http://www.w3.org/2000/svg'
                 width='22'
                 height='19'
@@ -95,7 +95,7 @@ const GameIntroductionComponent = () => {
           </details>
 
           <div className='flex items-center justify-center'>
-            <button className={styles["btn"]} type='button'>
+            <button className={styles['btn']} type='button'>
               <svg
                 width='130'
                 height='40'
@@ -125,7 +125,7 @@ const GameIntroductionComponent = () => {
                 Play Now
               </span>
             </button>
-            <button className={styles["btn"]} type='button'>
+            <button className={styles['btn']} type='button'>
               <svg
                 width='155'
                 height='41'

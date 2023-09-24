@@ -1,14 +1,14 @@
-"use client";
-import Slider from "react-slick";
-import Image from "next/image";
-import styles from "./FeedbackCarousel.module.css";
-import cc from "clsx";
-import "./Sliders.css";
-import { Nunito } from "next/font/google";
+'use client';
+import cc from 'clsx';
+import { Nunito } from 'next/font/google';
+import Image from 'next/image';
+import Slider from 'react-slick';
+import styles from './FeedbackCarousel.module.css';
+import './Sliders.css';
 
 const nunito = Nunito({
-  weight: ["200", "400", "700"],
-  subsets: ["latin"],
+  weight: ['200', '400', '700'],
+  subsets: ['latin']
 });
 const FeedbackCarouselComponent = () => {
   return (
@@ -18,18 +18,18 @@ const FeedbackCarouselComponent = () => {
         centerMode
         focusOnSelect
         infinite
-        centerPadding={"100px"}
+        centerPadding={'100px'}
         slidesToShow={3}
         speed={500}
         dots
         arrows={false}
       >
         <div>
-          <div className={styles["cart-background"]}>
+          <div className={styles['cart-background']}>
             <div
               className={cc(
                 nunito.className,
-                "relative w-full h-full font-extralight text-sm text-center px-10"
+                'relative w-full h-full font-extralight text-sm text-center px-10'
               )}
             >
               <svg
@@ -180,11 +180,11 @@ const FeedbackCarouselComponent = () => {
           </div>
         </div>
         <div>
-          <div className={styles["cart-background"]}>
+          <div className={styles['cart-background']}>
             <div
               className={cc(
                 nunito.className,
-                "relative w-full h-full font-extralight text-sm text-center px-10"
+                'relative w-full h-full font-extralight text-sm text-center px-10'
               )}
             >
               <svg
@@ -335,11 +335,11 @@ const FeedbackCarouselComponent = () => {
           </div>
         </div>
         <div>
-          <div className={styles["cart-background"]}>
+          <div className={styles['cart-background']}>
             <div
               className={cc(
                 nunito.className,
-                "relative w-full h-full font-extralight text-sm text-center px-10"
+                'relative w-full h-full font-extralight text-sm text-center px-10'
               )}
             >
               <svg
@@ -490,11 +490,11 @@ const FeedbackCarouselComponent = () => {
           </div>
         </div>
         <div>
-          <div className={styles["cart-background"]}>
+          <div className={styles['cart-background']}>
             <div
               className={cc(
                 nunito.className,
-                "relative w-full h-full font-extralight text-sm text-center px-10"
+                'relative w-full h-full font-extralight text-sm text-center px-10'
               )}
             >
               <svg

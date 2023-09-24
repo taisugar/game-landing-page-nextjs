@@ -1,20 +1,20 @@
-"use client";
-import cc from "clsx";
-import { Bebas_Neue, Nunito } from "next/font/google";
-import Image from "next/image";
-import { ChangeEvent, ChangeEventHandler, useState } from "react";
-import styles from "./GamingCollections.module.css";
+'use client';
+import cc from 'clsx';
+import { Bebas_Neue, Nunito } from 'next/font/google';
+import Image from 'next/image';
+import { ChangeEvent, useState } from 'react';
+import styles from './GamingCollections.module.css';
 
 const nunito = Nunito({
-  weight: ["200", "400", "700"],
-  subsets: ["latin"],
+  weight: ['200', '400', '700'],
+  subsets: ['latin']
 });
 const bebas_neue = Bebas_Neue({
-  weight: ["400"],
-  subsets: ["latin"],
+  weight: ['400'],
+  subsets: ['latin']
 });
 const GamingCollectionsComponent = () => {
-  const [tab, setTab] = useState("Adventure");
+  const [tab, setTab] = useState('Adventure');
 
   const onOptionChange = (event: ChangeEvent<HTMLInputElement>) => {
     setTab(event.target.value);
@@ -27,8 +27,8 @@ const GamingCollectionsComponent = () => {
           <h1
             className={cc(
               bebas_neue.className,
-              styles["sub-title"],
-              "animate__animated animate__pulse animate__infinite animate__slower"
+              styles['sub-title'],
+              'animate__animated animate__pulse animate__infinite animate__slower'
             )}
           >
             we&apos;re the first gaming award winners the world
@@ -40,50 +40,50 @@ const GamingCollectionsComponent = () => {
         <button
           type='button'
           className={cc(
-            "p-4 cursor-pointer hover:text-gray-400",
-            tab === "Adventure" && styles["selected"]
+            'p-4 cursor-pointer hover:text-gray-400',
+            tab === 'Adventure' && styles['selected']
           )}
-          onClick={() => setTab("Adventure")}
+          onClick={() => setTab('Adventure')}
         >
           Adventure
         </button>
         <button
           type='button'
           className={cc(
-            "p-4 cursor-pointer hover:text-gray-400",
-            tab === "Arcade" && styles["selected"]
+            'p-4 cursor-pointer hover:text-gray-400',
+            tab === 'Arcade' && styles['selected']
           )}
-          onClick={() => setTab("Arcade")}
+          onClick={() => setTab('Arcade')}
         >
           Arcade
         </button>
         <button
           type='button'
           className={cc(
-            "p-4 cursor-pointer hover:text-gray-400",
-            tab === "Arena" && styles["selected"]
+            'p-4 cursor-pointer hover:text-gray-400',
+            tab === 'Arena' && styles['selected']
           )}
-          onClick={() => setTab("Arena")}
+          onClick={() => setTab('Arena')}
         >
           Arena
         </button>
         <button
           type='button'
           className={cc(
-            "p-4 cursor-pointer hover:text-gray-400",
-            tab === "Avoider" && styles["selected"]
+            'p-4 cursor-pointer hover:text-gray-400',
+            tab === 'Avoider' && styles['selected']
           )}
-          onClick={() => setTab("Avoider")}
+          onClick={() => setTab('Avoider')}
         >
           Avoider
         </button>
         <button
           type='button'
           className={cc(
-            "p-4 cursor-pointer hover:text-gray-400",
-            tab === "Balance" && styles["selected"]
+            'p-4 cursor-pointer hover:text-gray-400',
+            tab === 'Balance' && styles['selected']
           )}
-          onClick={() => setTab("Balance")}
+          onClick={() => setTab('Balance')}
         >
           Balance
         </button>
@@ -120,15 +120,15 @@ const GamingCollectionsComponent = () => {
           <div
             className={cc(
               nunito.className,
-              "font-extralight text-xl capitalize"
+              'font-extralight text-xl capitalize'
             )}
           >
             <p>We&apos;ve have many more than</p>
             <div className='flex items-center justify-between'>
-              <p className={cc(bebas_neue.className, "font-normal text-7xl")}>
+              <p className={cc(bebas_neue.className, 'font-normal text-7xl')}>
                 100+
               </p>
-              <button className={styles["btn"]} type='button'>
+              <button className={styles['btn']} type='button'>
                 <svg
                   width='130'
                   height='40'

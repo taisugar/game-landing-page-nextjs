@@ -1,41 +1,41 @@
-import cc from "clsx";
-import Link from "next/link";
-import styles from "./Header.module.css";
+import cc from 'clsx';
+import Link from 'next/link';
+import styles from './Header.module.css';
 
 const HeaderComponent = () => {
   return (
     <header
       data-aos='flip-down'
-      className='flex items-center justify-between text-base h-20 mt-8'
+      className='mobile:hidden tablet:flex flex items-center justify-between text-base h-20 mt-8'
     >
       <nav className='flex list-none gap-5 underline-offset-8'>
-        <li className={cc(styles["marketplace"], "font-[700]")}>
-          <Link href={"#"} className='p-3'>
+        <li className={cc(styles['marketplace'], 'font-[700]')}>
+          <Link href={'#'} className='p-3'>
             Marketplace
           </Link>
         </li>
         <li className='px-3'>
-          <Link href={"#"} className='p-3 hover:underline'>
+          <Link href={'#'} className='p-3 hover:underline'>
             Stats
           </Link>
         </li>
         <li className='px-3'>
-          <Link href={"#"} className='p-3 hover:underline'>
+          <Link href={'#'} className='p-3 hover:underline'>
             Collections
           </Link>
         </li>
         <li className='px-3'>
-          <Link href={"#"} className='p-3 hover:underline'>
+          <Link href={'#'} className='p-3 hover:underline'>
             Explore
           </Link>
         </li>
         <li className='px-3'>
-          <Link href={"#"} className='p-3 hover:underline'>
+          <Link href={'#'} className='p-3 hover:underline'>
             Community
           </Link>
         </li>
       </nav>
-      <button className={styles["btn"]} type='button'>
+      <button className={styles['btn']} type='button'>
         <svg
           xmlns='http://www.w3.org/2000/svg'
           viewBox='0 0 130 40'
