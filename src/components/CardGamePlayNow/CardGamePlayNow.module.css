@@ -1,0 +1,10 @@
+.btn {
+  @apply relative w-[285px] h-[57px] font-bold hover:opacity-95 active:opacity-100;
+}
+.btn-text {
+  @apply absolute z-0 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-2xl;
+  font-weight: 400;
+  line-height: 111.5%;
+  letter-spacing: 3.472px;
+  text-transform: capitalize;
+}

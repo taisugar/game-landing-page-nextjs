@@ -1,0 +1,27 @@
+.according {
+  @apply border-b border-gray-400 mb-4;
+}
+.according-summary {
+  @apply flex items-center gap-3 rounded-md h-16 px-5 text-lg cursor-pointer;
+  transition: margin 150ms ease-out;
+}
+
+.according[open] {
+  @apply border-b-0;
+}
+.according[open] .according-summary .toggled {
+  @apply transition-all duration-200 ease-linear rotate-180;
+}
+
+.according[open] .according-summary {
+  @apply mb-3 border border-gray-400;
+  background-blend-mode: overlay, normal;
+  backdrop-filter: blur(40px);
+  background-image: url(/assets/according/bg-summary.png);
+}
+
+.btn {
+  @apply relative min-w-[130px] h-[40px] font-bold hover:opacity-95 active:opacity-100;
+  line-height: 111.5%;
+  text-transform: capitalize;
+}

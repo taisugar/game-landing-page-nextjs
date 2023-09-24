@@ -1,0 +1,50 @@
+/* @import url(_fonts.css); */
+/* @import url(_scrollBar.css); */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url(../../node_modules/slick-carousel/slick/slick.css);
+@import url(../../node_modules/slick-carousel/slick/slick-theme.css);
+@import url(../../node_modules/animate.css/animate.min.css);
+@import url(../../node_modules/aos/dist/aos.css);
+
+@layer base {
+  html,
+  body {
+    @apply antialiased m-0 p-0 bg-[#0a0a0a] text-white;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  input:disabled {
+    box-shadow: inset 0 1px 3px 0 #d8d8d8;
+    background-color: rgba(233, 233, 233, 0.49);
+  }
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  input[type="range"]::-webkit-slider-thumb {
+    pointer-events: all;
+    width: 16px;
+    height: 16px;
+    -webkit-appearance: none;
+  }
+  button:focus {
+    outline: none;
+  }
+
+  #root {
+    @apply overflow-hidden scroll-smooth;
+  }
+}

@@ -1,0 +1,18 @@
+.sub-title {
+  font-size: 83.29px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 95.5%;
+  letter-spacing: -3.332px;
+  text-transform: capitalize;
+}
+
+.btn {
+  @apply relative min-w-[130px] h-[40px] font-bold hover:opacity-95 active:opacity-100 text-base;
+  line-height: 111.5%;
+  text-transform: capitalize;
+}
+
+.selected {
+  @apply text-[#d6441c] font-bold;
+}

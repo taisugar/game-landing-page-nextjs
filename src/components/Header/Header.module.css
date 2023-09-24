@@ -1,0 +1,12 @@
+.btn {
+  @apply relative min-w-[130px] h-[40px] font-bold hover:opacity-95 active:opacity-100;
+  line-height: 111.5%;
+  text-transform: capitalize;
+}
+
+.marketplace {
+  background: var(--4, linear-gradient(90deg, #c1260f 0.34%, #ee642a 96.66%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
