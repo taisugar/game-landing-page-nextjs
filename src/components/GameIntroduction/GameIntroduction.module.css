@@ -17,7 +17,8 @@
   @apply mb-3 border border-gray-400;
   background-blend-mode: overlay, normal;
   backdrop-filter: blur(40px);
-  background-image: url(/assets/according/bg-summary.png);
+  background: url(/assets/according/bg-summary-min.webp) no-repeat center;
+  background-size: 100% 100%;
 }
 
 .btn {

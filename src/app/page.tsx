@@ -46,9 +46,12 @@ export default function Home() {
       <HeaderComponent />
 
       <div className={styles['page']}>
-        <div data-aos='zoom-in-down' className='w-[898px] relative mt-14'>
+        <div
+          data-aos='zoom-in-down'
+          className='w-[240px] tablet:w-[520px] desktop:w-[898px] relative mt-14'
+        >
           <Image
-            className='absolute -top-12 -left-5 animate__animated animate__wobble animate__infinite animate__slower'
+            className='absolute -top-10 -left-2 tablet:-top-12 tablet:-left-5 animate__animated animate__wobble animate__infinite animate__slower w-16 h-16 tablet:w-20 tablet:h-20'
             alt='Slogan Effect Icon'
             aria-hidden='true'
             src={SloganEffectIcon}
@@ -68,22 +71,25 @@ export default function Home() {
 
         <div className={cc(styles['bg'], 'opacity-10')}></div>
 
-        <div className='flex items-center justify-center gap-8 my-10'>
+        <div className='flex flex-col flex-wrap tablet:flex-row items-center justify-center gap-8 my-10'>
           <CardGamePlayNowComponent
-            gameImageSrc='/assets/games/game-1.png'
+            gameImageSrc='/assets/games/game-1-min.webp'
             gameImageAlt='Game 1'
           />
           <CardGamePlayNowComponent
-            gameImageSrc='/assets/games/game-2.png'
+            gameImageSrc='/assets/games/game-2-min.webp'
             gameImageAlt='Game 2'
           />
           <CardGamePlayNowComponent
-            gameImageSrc='/assets/games/game-3.png'
+            gameImageSrc='/assets/games/game-3-min.webp'
             gameImageAlt='Game 3'
           />
         </div>
 
-        <div data-aos='zoom-in' className='w-[922px] relative mt-32'>
+        <div
+          data-aos='zoom-in'
+          className='w-[240px] tablet:w-[500px] desktop:w-[922px] relative mt-32'
+        >
           <Image
             className='absolute -rotate-[43deg] -top-24 left-1/2 -translate-x-1/2'
             alt='Corona Icon'
@@ -105,7 +111,10 @@ export default function Home() {
 
         <GamingCollectionsComponent />
 
-        <div data-aos='zoom-out' className='w-[922px] relative mt-32'>
+        <div
+          data-aos='zoom-out'
+          className='w-[240px] tablet:w-[500px] desktop:w-[922px] relative mt-32'
+        >
           <Image
             className='absolute -rotate-[43deg] -top-24 left-1/2 -translate-x-1/2'
             alt='Corona Icon'
@@ -175,7 +184,7 @@ export default function Home() {
           </svg>
         </div>
 
-        <div className='flex items-center justify-center gap-5 underline-offset-8 mb-12'>
+        <div className='flex flex-wrap items-center justify-center tablet:gap-5 underline-offset-8 mb-12'>
           <Link href={'#'} className='p-3 hover:text-gray-300 hover:underline'>
             Marketplace
           </Link>

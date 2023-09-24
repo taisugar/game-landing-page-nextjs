@@ -3,23 +3,11 @@
 }
 
 .slogan {
-  text-align: center;
-  font-size: 103.292px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 95.5%;
-  letter-spacing: -4.132px;
-  text-transform: capitalize;
+  @apply text-5xl desktop:text-8xl text-center font-normal capitalize desktop:tracking-tightest;
 }
 
 .sub-title {
-  text-align: center;
-  font-size: 83.29px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 95.5%;
-  letter-spacing: -3.332px;
-  text-transform: capitalize;
+  @apply text-4xl desktop:text-7xl text-center font-normal capitalize desktop:tracking-tighter;
 }
 
 .bg {
@@ -32,6 +20,6 @@
       rgba(0, 0, 0, 0.44) 50.53%,
       rgba(0, 0, 0, 0.83) 82.93%
     ),
-    url('/bg.jpeg') no-repeat center;
-  background-size: cover;
+    url(/bg-min.webp) no-repeat center;
+  background-size: 100% 100%;
 }

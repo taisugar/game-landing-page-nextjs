@@ -6,14 +6,29 @@ import TwitchBrand from '../../../public/assets/brandname/twitch.svg';
 
 const BrandNameComponent = () => {
   return (
-    <div data-aos='fade-up' className='flex items-center justify-evenly gap-5'>
-      <Image className='mx-11 mb-8' alt='Twitch Brand' src={TwitchBrand} />
+    <div
+      data-aos='fade-up'
+      className='flex flex-col flex-wrap tablet:flex-row items-center justify-evenly gap-5'
+    >
+      <Image
+        className='mx-11 h-20 tablet:mb-8'
+        alt='Twitch Brand'
+        src={TwitchBrand}
+      />
 
-      <Image className='mx-11 mt-1' alt='Roblox Brand' src={RobloxBrand} />
+      <Image
+        className='mx-11 h-20 tablet:mt-1'
+        alt='Roblox Brand'
+        src={RobloxBrand}
+      />
 
-      <Image className='mx-11 ' alt='Chess Brand' src={ChessBrand} />
+      <Image className='mx-11 h-20' alt='Chess Brand' src={ChessBrand} />
 
-      <Image className='mx-11 ' alt='Gamesradar Brand' src={GamesradarBrand} />
+      <Image
+        className='mx-11 h-20'
+        alt='Gamesradar Brand'
+        src={GamesradarBrand}
+      />
     </div>
   );
 };

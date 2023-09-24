@@ -1,5 +1,5 @@
 .cart-background {
-  @apply w-[600px] h-[320px];
-  background: url(/bg-feedback.png) no-repeat center;
-  background-size: cover;
+  @apply desktop:w-[600px] desktop:h-[320px];
+  background: url(/bg-feedback-min.webp) no-repeat center;
+  background-size: 100% 100%;
 }

@@ -1,10 +1,5 @@
 .sub-title {
-  font-size: 83.29px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 95.5%;
-  letter-spacing: -3.332px;
-  text-transform: capitalize;
+  @apply text-4xl desktop:text-7xl text-center desktop:text-left font-normal capitalize desktop:tracking-tighter;
 }
 
 .btn {

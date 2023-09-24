@@ -22,8 +22,8 @@ const GamingCollectionsComponent = () => {
 
   return (
     <div data-aos='zoom-in' className='mt-20 z-10'>
-      <div className='grid grid-cols-2'>
-        <div className='w-[726px]'>
+      <div className='grid grid-cols-1 desktop:grid-cols-2'>
+        <div className='w-full desktop:w-[726px] px-10 desktop:px-0'>
           <h1
             className={cc(
               bebas_neue.className,
@@ -36,7 +36,7 @@ const GamingCollectionsComponent = () => {
         </div>
       </div>
 
-      <div className='w-full flex gap-6 -mb-24'>
+      <div className='w-full flex flex-wrap gap-2 my-4 tablet:gap-4 desktop:gap-6 desktop:my-5 desktop:-mb-24 desktop:mt-0'>
         <button
           type='button'
           className={cc(
@@ -89,17 +89,17 @@ const GamingCollectionsComponent = () => {
         </button>
       </div>
 
-      <div className='grid grid-cols-2'>
-        <div className='flex flex-col gap-6 items-end mr-6 mt-28'>
+      <div className='grid grid-cols-1 tablet:grid-cols-2'>
+        <div className='flex flex-col gap-6 mb-6 tablet:mr-6 tablet:mb-0 desktop:items-end desktop:mt-28'>
           <Image
             alt=''
-            src='/assets/gaming-collections/collection-1.png'
+            src='/assets/gaming-collections/collection-1-min.webp'
             width={596}
             height={488}
           />
           <Image
             alt=''
-            src='/assets/gaming-collections/collection-2.png'
+            src='/assets/gaming-collections/collection-2-min.webp'
             width={596}
             height={556}
           />
@@ -107,25 +107,30 @@ const GamingCollectionsComponent = () => {
         <div className='flex flex-col gap-6 max-w-[596px]'>
           <Image
             alt=''
-            src='/assets/gaming-collections/collection-3.png'
+            src='/assets/gaming-collections/collection-3-min.webp'
             width={596}
             height={484}
           />
           <Image
             alt=''
-            src='/assets/gaming-collections/collection-4.png'
+            src='/assets/gaming-collections/collection-4-min.webp'
             width={596}
             height={470}
           />
           <div
             className={cc(
               nunito.className,
-              'font-extralight text-xl capitalize'
+              'font-extralight text-lg target:text-xl capitalize'
             )}
           >
             <p>We&apos;ve have many more than</p>
             <div className='flex items-center justify-between'>
-              <p className={cc(bebas_neue.className, 'font-normal text-7xl')}>
+              <p
+                className={cc(
+                  bebas_neue.className,
+                  'font-normal text-5xl target:text-7xl'
+                )}
+              >
                 100+
               </p>
               <button className={styles['btn']} type='button'>

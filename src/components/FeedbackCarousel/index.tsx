@@ -23,13 +23,27 @@ const FeedbackCarouselComponent = () => {
         speed={500}
         dots
         arrows={false}
+        responsive={[
+          {
+            breakpoint: 712,
+            settings: {
+              slidesToShow: 3
+            }
+          },
+          {
+            breakpoint: 320,
+            settings: {
+              slidesToShow: 1
+            }
+          }
+        ]}
       >
         <div>
           <div className={styles['cart-background']}>
             <div
               className={cc(
                 nunito.className,
-                'relative w-full h-full font-extralight text-sm text-center px-10'
+                'relative w-full h-full font-extralight text-xs px-5 tablet:text-sm text-center desktop:px-10'
               )}
             >
               <svg

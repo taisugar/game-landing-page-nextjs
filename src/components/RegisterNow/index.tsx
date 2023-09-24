@@ -25,7 +25,7 @@ const RegisterNowComponent = () => {
         />
         <Image
           alt=''
-          src='/assets/screen/screen-1.png'
+          src='/assets/screen/screen-1-min.webp'
           width={847}
           height={525}
         />

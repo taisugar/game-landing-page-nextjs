@@ -9,17 +9,17 @@ const nunito = Nunito({
 });
 const GameIntroductionComponent = () => {
   return (
-    <div className='grid grid-cols-2 gap-4 z-10'>
+    <div className='grid grid-cols-1 desktop:grid-cols-2 desktop:gap-4 z-10'>
       <div data-aos='fade-right' className='w-full'>
         <Image
           alt=''
-          src='/assets/screen/screen-2.png'
+          src='/assets/screen/screen-2-min.webp'
           width={704}
           height={694}
         />
       </div>
-      <div data-aos='fade-left' className='mt-10'>
-        <section className={cc('w-[547px]', nunito.className)}>
+      <div data-aos='fade-left' className='desktop:mt-10'>
+        <section className={cc('desktop:w-[547px]', nunito.className)}>
           <details className={styles['according']}>
             <summary className={styles['according-summary']}>
               <svg
