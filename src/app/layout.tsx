@@ -31,7 +31,10 @@ export default function RootLayout({
           inter.className
         )}
       >
-        <main id='root' className='min-h-screen desktop:px-24'>
+        <main
+          id='root'
+          className='min-h-screen px-5 tablet:px-10 desktop:px-24'
+        >
           {children}
         </main>
       </body>

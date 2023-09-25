@@ -1,17 +1,7 @@
 .btn {
-  @apply relative w-[317px] h-[64px] font-bold hover:opacity-95 active:opacity-100;
+  @apply relative w-[210px] h-[44px] tablet:w-[270px] tablet:h-[54px] desktop:w-[317px] desktop:h-[64px] font-bold hover:opacity-95 active:opacity-100;
 }
 
 .btn-text {
-  @apply absolute z-0 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-2xl;
-  font-weight: 400;
-  line-height: 111.5%;
-  letter-spacing: 3.472px;
-  text-transform: capitalize;
-}
-
-.screen-gun {
-  top: calc(50%);
-  left: 50%;
-  transform: translate(-50%, -50%);
+  @apply absolute z-0 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-normal capitalize -tracking-tighter text-sm desktop:text-2xl;
 }

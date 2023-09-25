@@ -8,24 +8,28 @@ const BrandNameComponent = () => {
   return (
     <div
       data-aos='fade-up'
-      className='flex flex-col flex-wrap tablet:flex-row items-center justify-evenly gap-5'
+      className='flex flex-col flex-wrap tablet:flex-row items-center justify-center desktop:justify-evenly gap-5'
     >
       <Image
-        className='mx-11 h-20 tablet:mb-8'
+        className='mx-6 desktop:mx-11 h-20 tablet:mb-8'
         alt='Twitch Brand'
         src={TwitchBrand}
       />
 
       <Image
-        className='mx-11 h-20 tablet:mt-1'
+        className='mx-6 desktop:mx-11 h-20 tablet:mt-1'
         alt='Roblox Brand'
         src={RobloxBrand}
       />
 
-      <Image className='mx-11 h-20' alt='Chess Brand' src={ChessBrand} />
+      <Image
+        className='mx-6 desktop:mx-11 h-20'
+        alt='Chess Brand'
+        src={ChessBrand}
+      />
 
       <Image
-        className='mx-11 h-20'
+        className='mx-6 desktop:mx-11 h-20'
         alt='Gamesradar Brand'
         src={GamesradarBrand}
       />

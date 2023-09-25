@@ -12,7 +12,10 @@ const nunito = Nunito({
 });
 const FeedbackCarouselComponent = () => {
   return (
-    <div data-aos='fade-down' className='w-full text-white py-20 relative'>
+    <div
+      data-aos='fade-down'
+      className='w-full text-white pt-5 pb-12 tablet:py-14 relative'
+    >
       <Slider
         className='center'
         centerMode
@@ -27,27 +30,34 @@ const FeedbackCarouselComponent = () => {
           {
             breakpoint: 712,
             settings: {
-              slidesToShow: 3
+              slidesToShow: 3,
+              slidesToScroll: 3
             }
           },
           {
             breakpoint: 320,
             settings: {
-              slidesToShow: 1
+              slidesToShow: 1,
+              slidesToScroll: 1
             }
           }
         ]}
       >
         <div>
-          <div className={styles['cart-background']}>
+          <div
+            className={cc(
+              styles['cart-background'],
+              'w-52 tablet:w-80 desktop:w-[580px] desktop:h-[320px]'
+            )}
+          >
             <div
               className={cc(
                 nunito.className,
-                'relative w-full h-full font-extralight text-xs px-5 tablet:text-sm text-center desktop:px-10'
+                'relative w-full h-full font-extralight text-center text-[10px] px-3 tablet:px-5 tablet:text-sm desktop:px-10'
               )}
             >
               <svg
-                className='slick-quote absolute -top-7 right-10 z-100'
+                className='slick-quote absolute top-0 right-5 z-100 w-4 h-3 tablet:-top-1 tablet:right-8 tablet:w-6 tablet:h-5 desktop:-top-4 desktop:right-10 desktop:w-10 desktop:h-10'
                 xmlns='http://www.w3.org/2000/svg'
                 width='72'
                 height='62'
@@ -72,8 +82,9 @@ const FeedbackCarouselComponent = () => {
                   </linearGradient>
                 </defs>
               </svg>
-              <section className='flex items-center justify-center gap-3 -mt-2 mb-2'>
+              <section className='flex items-center justify-center gap-1 mt-4 mb-1 tablet:mt-5 tablet:mb-2 desktop:gap-3'>
                 <svg
+                  className='w-3 h-3 tablet:w-5 tablet:h-5 desktop:w-7 desktop:h-7'
                   xmlns='http://www.w3.org/2000/svg'
                   width='28'
                   height='28'
@@ -93,6 +104,7 @@ const FeedbackCarouselComponent = () => {
                   </defs>
                 </svg>
                 <svg
+                  className='w-3 h-3 tablet:w-5 tablet:h-5 desktop:w-7 desktop:h-7'
                   xmlns='http://www.w3.org/2000/svg'
                   width='28'
                   height='28'
@@ -112,6 +124,7 @@ const FeedbackCarouselComponent = () => {
                   </defs>
                 </svg>
                 <svg
+                  className='w-3 h-3 tablet:w-5 tablet:h-5 desktop:w-7 desktop:h-7'
                   xmlns='http://www.w3.org/2000/svg'
                   width='28'
                   height='28'
@@ -131,6 +144,7 @@ const FeedbackCarouselComponent = () => {
                   </defs>
                 </svg>
                 <svg
+                  className='w-3 h-3 tablet:w-5 tablet:h-5 desktop:w-7 desktop:h-7'
                   xmlns='http://www.w3.org/2000/svg'
                   width='28'
                   height='28'
@@ -150,6 +164,7 @@ const FeedbackCarouselComponent = () => {
                   </defs>
                 </svg>
                 <svg
+                  className='w-3 h-3 tablet:w-5 tablet:h-5 desktop:w-7 desktop:h-7'
                   xmlns='http://www.w3.org/2000/svg'
                   width='28'
                   height='28'
@@ -183,26 +198,31 @@ const FeedbackCarouselComponent = () => {
                 senior guarantor makes this conceivable.
               </p>
               <Image
-                className='mt-2'
+                className='mt-2 w-8 h-8 tablet:w-10 tablet:h-10 desktop:w-12 desktop:h-12 desktop:mt-4'
                 alt='Avatar Esther Howard'
                 src='/assets/avatars/avatar-1.png'
                 width={52}
                 height={52}
               />
-              <p className='font-bold mb-5'>Esther Howard</p>
+              <p className='font-bold mb-10 tablet:mb-12'>Esther Howard</p>
             </div>
           </div>
         </div>
         <div>
-          <div className={styles['cart-background']}>
+          <div
+            className={cc(
+              styles['cart-background'],
+              'w-52 tablet:w-80 desktop:w-[580px] desktop:h-[320px]'
+            )}
+          >
             <div
               className={cc(
                 nunito.className,
-                'relative w-full h-full font-extralight text-sm text-center px-10'
+                'relative w-full h-full font-extralight text-center text-[10px] px-3 tablet:px-5 tablet:text-sm desktop:px-10'
               )}
             >
               <svg
-                className='slick-quote absolute -top-7 right-10 z-100'
+                className='slick-quote absolute top-0 right-5 z-100 w-4 h-3 tablet:-top-1 tablet:right-8 tablet:w-6 tablet:h-5 desktop:-top-4 desktop:right-10 desktop:w-10 desktop:h-10'
                 xmlns='http://www.w3.org/2000/svg'
                 width='72'
                 height='62'
@@ -227,8 +247,9 @@ const FeedbackCarouselComponent = () => {
                   </linearGradient>
                 </defs>
               </svg>
-              <section className='flex items-center justify-center gap-3 -mt-2 mb-2'>
+              <section className='flex items-center justify-center gap-1 mt-4 mb-1 tablet:mt-5 tablet:mb-2 desktop:gap-3'>
                 <svg
+                  className='w-3 h-3 tablet:w-5 tablet:h-5 desktop:w-7 desktop:h-7'
                   xmlns='http://www.w3.org/2000/svg'
                   width='28'
                   height='28'
@@ -248,6 +269,7 @@ const FeedbackCarouselComponent = () => {
                   </defs>
                 </svg>
                 <svg
+                  className='w-3 h-3 tablet:w-5 tablet:h-5 desktop:w-7 desktop:h-7'
                   xmlns='http://www.w3.org/2000/svg'
                   width='28'
                   height='28'
@@ -267,6 +289,7 @@ const FeedbackCarouselComponent = () => {
                   </defs>
                 </svg>
                 <svg
+                  className='w-3 h-3 tablet:w-5 tablet:h-5 desktop:w-7 desktop:h-7'
                   xmlns='http://www.w3.org/2000/svg'
                   width='28'
                   height='28'
@@ -286,6 +309,7 @@ const FeedbackCarouselComponent = () => {
                   </defs>
                 </svg>
                 <svg
+                  className='w-3 h-3 tablet:w-5 tablet:h-5 desktop:w-7 desktop:h-7'
                   xmlns='http://www.w3.org/2000/svg'
                   width='28'
                   height='28'
@@ -305,6 +329,7 @@ const FeedbackCarouselComponent = () => {
                   </defs>
                 </svg>
                 <svg
+                  className='w-3 h-3 tablet:w-5 tablet:h-5 desktop:w-7 desktop:h-7'
                   xmlns='http://www.w3.org/2000/svg'
                   width='28'
                   height='28'
@@ -338,26 +363,31 @@ const FeedbackCarouselComponent = () => {
                 senior guarantor makes this conceivable.
               </p>
               <Image
-                className='mt-2'
+                className='mt-2 w-8 h-8 tablet:w-10 tablet:h-10 desktop:w-12 desktop:h-12 desktop:mt-4'
                 alt='Avatar Cody Fisher'
                 src='/assets/avatars/avatar-2.png'
                 width={52}
                 height={52}
               />
-              <p className='font-bold mb-5'>Cody Fisher</p>
+              <p className='font-bold mb-10 tablet:mb-12'>Cody Fisher</p>
             </div>
           </div>
         </div>
         <div>
-          <div className={styles['cart-background']}>
+          <div
+            className={cc(
+              styles['cart-background'],
+              'w-52 tablet:w-80 desktop:w-[580px] desktop:h-[320px]'
+            )}
+          >
             <div
               className={cc(
                 nunito.className,
-                'relative w-full h-full font-extralight text-sm text-center px-10'
+                'relative w-full h-full font-extralight text-center text-[10px] px-3 tablet:px-5 tablet:text-sm desktop:px-10'
               )}
             >
               <svg
-                className='slick-quote absolute -top-7 right-10 z-100'
+                className='slick-quote absolute top-0 right-5 z-100 w-4 h-3 tablet:-top-1 tablet:right-8 tablet:w-6 tablet:h-5 desktop:-top-4 desktop:right-10 desktop:w-10 desktop:h-10'
                 xmlns='http://www.w3.org/2000/svg'
                 width='72'
                 height='62'
@@ -382,8 +412,9 @@ const FeedbackCarouselComponent = () => {
                   </linearGradient>
                 </defs>
               </svg>
-              <section className='flex items-center justify-center gap-3 -mt-2 mb-2'>
+              <section className='flex items-center justify-center gap-1 mt-4 mb-1 tablet:mt-5 tablet:mb-2 desktop:gap-3'>
                 <svg
+                  className='w-3 h-3 tablet:w-5 tablet:h-5 desktop:w-7 desktop:h-7'
                   xmlns='http://www.w3.org/2000/svg'
                   width='28'
                   height='28'
@@ -403,6 +434,7 @@ const FeedbackCarouselComponent = () => {
                   </defs>
                 </svg>
                 <svg
+                  className='w-3 h-3 tablet:w-5 tablet:h-5 desktop:w-7 desktop:h-7'
                   xmlns='http://www.w3.org/2000/svg'
                   width='28'
                   height='28'
@@ -422,6 +454,7 @@ const FeedbackCarouselComponent = () => {
                   </defs>
                 </svg>
                 <svg
+                  className='w-3 h-3 tablet:w-5 tablet:h-5 desktop:w-7 desktop:h-7'
                   xmlns='http://www.w3.org/2000/svg'
                   width='28'
                   height='28'
@@ -441,6 +474,7 @@ const FeedbackCarouselComponent = () => {
                   </defs>
                 </svg>
                 <svg
+                  className='w-3 h-3 tablet:w-5 tablet:h-5 desktop:w-7 desktop:h-7'
                   xmlns='http://www.w3.org/2000/svg'
                   width='28'
                   height='28'
@@ -460,6 +494,7 @@ const FeedbackCarouselComponent = () => {
                   </defs>
                 </svg>
                 <svg
+                  className='w-3 h-3 tablet:w-5 tablet:h-5 desktop:w-7 desktop:h-7'
                   xmlns='http://www.w3.org/2000/svg'
                   width='28'
                   height='28'
@@ -493,26 +528,31 @@ const FeedbackCarouselComponent = () => {
                 senior guarantor makes this conceivable.
               </p>
               <Image
-                className='mt-2'
+                className='mt-2 w-8 h-8 tablet:w-10 tablet:h-10 desktop:w-12 desktop:h-12 desktop:mt-4'
                 alt='Avatar Guy Hawkins'
                 src='/assets/avatars/avatar-3.png'
                 width={52}
                 height={52}
               />
-              <p className='font-bold mb-5'>Guy Hawkins</p>
+              <p className='font-bold mb-10 tablet:mb-12'>Guy Hawkins</p>
             </div>
           </div>
         </div>
         <div>
-          <div className={styles['cart-background']}>
+          <div
+            className={cc(
+              styles['cart-background'],
+              'w-52 tablet:w-80 desktop:w-[580px] desktop:h-[320px]'
+            )}
+          >
             <div
               className={cc(
                 nunito.className,
-                'relative w-full h-full font-extralight text-sm text-center px-10'
+                'relative w-full h-full font-extralight text-center text-[10px] px-3 tablet:px-5 tablet:text-sm desktop:px-10'
               )}
             >
               <svg
-                className='slick-quote absolute -top-7 right-10 z-100'
+                className='slick-quote absolute top-0 right-5 z-100 w-4 h-3 tablet:-top-1 tablet:right-8 tablet:w-6 tablet:h-5 desktop:-top-4 desktop:right-10 desktop:w-10 desktop:h-10'
                 xmlns='http://www.w3.org/2000/svg'
                 width='72'
                 height='62'
@@ -537,8 +577,9 @@ const FeedbackCarouselComponent = () => {
                   </linearGradient>
                 </defs>
               </svg>
-              <section className='flex items-center justify-center gap-3 -mt-2 mb-2'>
+              <section className='flex items-center justify-center gap-1 mt-4 mb-1 tablet:mt-5 tablet:mb-2 desktop:gap-3'>
                 <svg
+                  className='w-3 h-3 tablet:w-5 tablet:h-5 desktop:w-7 desktop:h-7'
                   xmlns='http://www.w3.org/2000/svg'
                   width='28'
                   height='28'
@@ -558,6 +599,7 @@ const FeedbackCarouselComponent = () => {
                   </defs>
                 </svg>
                 <svg
+                  className='w-3 h-3 tablet:w-5 tablet:h-5 desktop:w-7 desktop:h-7'
                   xmlns='http://www.w3.org/2000/svg'
                   width='28'
                   height='28'
@@ -577,6 +619,7 @@ const FeedbackCarouselComponent = () => {
                   </defs>
                 </svg>
                 <svg
+                  className='w-3 h-3 tablet:w-5 tablet:h-5 desktop:w-7 desktop:h-7'
                   xmlns='http://www.w3.org/2000/svg'
                   width='28'
                   height='28'
@@ -596,6 +639,7 @@ const FeedbackCarouselComponent = () => {
                   </defs>
                 </svg>
                 <svg
+                  className='w-3 h-3 tablet:w-5 tablet:h-5 desktop:w-7 desktop:h-7'
                   xmlns='http://www.w3.org/2000/svg'
                   width='28'
                   height='28'
@@ -615,6 +659,7 @@ const FeedbackCarouselComponent = () => {
                   </defs>
                 </svg>
                 <svg
+                  className='w-3 h-3 tablet:w-5 tablet:h-5 desktop:w-7 desktop:h-7'
                   xmlns='http://www.w3.org/2000/svg'
                   width='28'
                   height='28'
@@ -635,25 +680,26 @@ const FeedbackCarouselComponent = () => {
                 </svg>
               </section>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
-                earum assumenda illum expedita dolore, magnam ratione incidunt
-                fuga magni distinctio animi illo? Expedita assumenda incidunt
-                odio nihil quasi vero quis.
+                Quick and adaptable, SoundPart reliably meets these key
+                necessities. The capacity to talk straightforwardly with a
+                senior guarantor makes this conceivable. Quick and adaptable,
+                SoundPart reliably meets these key necessities. The capacity to
+                talk straightforwardly with a senior guarantor makes this
+                conceivable.
               </p>
               <p className='mt-1'>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Cupiditate autem dolores quod, corporis reiciendis aliquam
-                ratione explicabo, hic quibusdam veritatis pariatur inventore
-                dolorem quos dolore minima? Eius nisi eveniet amet.
+                Quick and adaptable, SoundPart reliably meets these key
+                necessities. The capacity to talk straightforwardly with a
+                senior guarantor makes this conceivable.
               </p>
               <Image
-                className='mt-2'
+                className='mt-2 w-8 h-8 tablet:w-10 tablet:h-10 desktop:w-12 desktop:h-12 desktop:mt-4'
                 alt='Avatar Robert Cruse'
-                src='/assets/avatars/avatar-1.png'
+                src='/assets/avatars/avatar-3.png'
                 width={52}
                 height={52}
               />
-              <p className='font-bold mb-5'>Robert Cruse</p>
+              <p className='font-bold mb-10 tablet:mb-12'>Robert Cruse</p>
             </div>
           </div>
         </div>

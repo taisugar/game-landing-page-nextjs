@@ -1,0 +1,27 @@
+/* Style hamburger sidebar */
+.bm-burger-button {
+  @apply fixed right-6 top-5 w-8 h-7 shadow;
+}
+.bm-burger-bars {
+  @apply bg-gray-400 rounded-sm;
+  height: 15% !important;
+}
+.bm-burger-bars-hover {
+  @apply bg-gray-800;
+}
+.bm-cross-button {
+  @apply w-6 h-6;
+}
+.bm-cross {
+  @apply bg-gray-600;
+}
+.burger__menu.bm-menu-wrap {
+  @apply bg-gray-900;
+  width: 250px !important;
+}
+.burger__menu .bm-item {
+  @apply border-t;
+}
+.burger__menu .bm-item:first-child {
+  @apply pt-10 border-t-transparent;
+}

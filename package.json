@@ -21,6 +21,7 @@
     "next": "13.5.2",
     "postcss": "8.4.30",
     "react": "18.2.0",
+    "react-burger-menu": "^3.0.9",
     "react-dom": "18.2.0",
     "react-fast-marquee": "^1.6.1",
     "react-slick": "^0.29.0",
@@ -30,6 +31,7 @@
   },
   "devDependencies": {
     "@types/aos": "^3.0.5",
+    "@types/react-burger-menu": "^2.8.3",
     "@types/react-slick": "^0.23.10",
     "tailwindcss-debug-screens": "^2.2.1"
   }

@@ -1,7 +1,6 @@
 .btn {
-  @apply relative min-w-[130px] h-[40px] font-bold hover:opacity-95 active:opacity-100;
+  @apply relative min-w-[130px] h-[40px] font-bold hover:opacity-95 active:opacity-100 capitalize;
   line-height: 111.5%;
-  text-transform: capitalize;
 }
 
 .marketplace {

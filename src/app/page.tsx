@@ -7,6 +7,9 @@ import CoronaIcon from '../../public/assets/icons/corona.svg';
 import SloganEffectIcon from '../../public/assets/icons/slogan-effect.svg';
 import styles from './page.module.css';
 
+const ScrollToTopComponent = dynamic(() => import('@components/ScrollToTop'), {
+  ssr: false
+});
 const HeaderComponent = dynamic(() => import('@components/Header'), {
   ssr: false
 });
@@ -44,14 +47,13 @@ export default function Home() {
   return (
     <>
       <HeaderComponent />
-
-      <div className={styles['page']}>
+      <div id='page-wrap' className={styles['page']}>
         <div
           data-aos='zoom-in-down'
           className='w-[240px] tablet:w-[520px] desktop:w-[898px] relative mt-14'
         >
           <Image
-            className='absolute -top-10 -left-2 tablet:-top-12 tablet:-left-5 animate__animated animate__wobble animate__infinite animate__slower w-16 h-16 tablet:w-20 tablet:h-20'
+            className='absolute w-16 h-16 -top-10 -left-6 tablet:w-20 tablet:h-20 tablet:-top-14 tablet:-left-8 desktop:w-24 desktop:h-24 animate__animated animate__wobble animate__infinite animate__slower'
             alt='Slogan Effect Icon'
             aria-hidden='true'
             src={SloganEffectIcon}
@@ -67,6 +69,7 @@ export default function Home() {
           </h1>
         </div>
         <RegisterNowComponent />
+
         <BrandNameComponent />
 
         <div className={cc(styles['bg'], 'opacity-10')}></div>
@@ -113,7 +116,7 @@ export default function Home() {
 
         <div
           data-aos='zoom-out'
-          className='w-[240px] tablet:w-[500px] desktop:w-[922px] relative mt-32'
+          className='w-[240px] tablet:w-[500px] desktop:w-[922px] relative mt-32 desktop:mt-48'
         >
           <Image
             className='absolute -rotate-[43deg] -top-24 left-1/2 -translate-x-1/2'
@@ -204,6 +207,8 @@ export default function Home() {
 
         <FooterComponent />
       </div>
+
+      <ScrollToTopComponent />
     </>
   );
 }

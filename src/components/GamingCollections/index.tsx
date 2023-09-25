@@ -120,7 +120,7 @@ const GamingCollectionsComponent = () => {
           <div
             className={cc(
               nunito.className,
-              'font-extralight text-lg target:text-xl capitalize'
+              'font-extralight text-lg tablet:text-xl capitalize'
             )}
           >
             <p>We&apos;ve have many more than</p>
@@ -128,7 +128,7 @@ const GamingCollectionsComponent = () => {
               <p
                 className={cc(
                   bebas_neue.className,
-                  'font-normal text-5xl target:text-7xl'
+                  'font-normal text-5xl tablet:text-7xl'
                 )}
               >
                 100+

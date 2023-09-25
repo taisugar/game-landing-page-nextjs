@@ -15,21 +15,22 @@ const RegisterNowComponent = () => {
   return (
     <section
       data-aos='zoom-in'
-      className='relative flex flex-col items-center justify-center w-full h-full'
+      className='relative flex flex-col items-center justify-center w-full h-full mb-8 desktop:mb-20'
     >
-      <div className='relative w-[847px] h-[525px] z-20 mt-8'>
+      <div className='relative w-full h-full tablet:w-[640px] desktop:w-[760px] desktop:h-[445px] z-20 mt-8'>
         <Image
-          className='absolute -top-14 -right-5 animate__animated animate__heartBeat animate__infinite'
+          className='absolute w-12 h-12 -top-10 -right-5 tablet:w-20 tablet:h-20 tablet:-top-12 tablet:-right-10 desktop:-top-16 desktop:-right-20 desktop:w-24 desktop:h-24 animate__animated animate__heartBeat animate__infinite'
           alt=''
           src={CoronaIcon}
         />
         <Image
+          className='max-w-[110%] -ml-[5%] -mb-[3%] tablet:max-w-full tablet:ml-0'
           alt=''
           src='/assets/screen/screen-1-min.webp'
-          width={847}
-          height={525}
+          width={760}
+          height={445}
         />
-        <div className='absolute bottom-6 left-1/2 -translate-x-1/2'>
+        <div className='flex items-center justify-center tablet:mt-2'>
           <button className={styles['btn']} type='button'>
             <svg
               xmlns='http://www.w3.org/2000/svg'
@@ -61,11 +62,11 @@ const RegisterNowComponent = () => {
         </div>
       </div>
 
-      <div className='absolute w-[150%]'>
-        <div className='absolute -rotate-[10deg]'>
-          <Marquee className='bg-white h-20' autoFill>
+      <div className='absolute w-[200%]'>
+        <div className='absolute -rotate-[30deg] desktop:-rotate-[10deg]'>
+          <Marquee className='bg-white h-8 tablet:h-16 desktop:h-20' autoFill>
             <Image
-              className='rotate-[10deg] px-3'
+              className='rotate-[10deg] px-3 w-20 tablet:w-24 desktop:w-36'
               alt=''
               aria-hidden='true'
               src={CoronaBlackPlayIcon}
@@ -74,14 +75,14 @@ const RegisterNowComponent = () => {
             />
           </Marquee>
         </div>
-        <div className='absolute rotate-[3deg]'>
+        <div className='absolute rotate-[45deg] desktop:rotate-[3deg]'>
           <Marquee
-            className='bg-white bg-opacity-5 h-20'
+            className='bg-white bg-opacity-5 h-8 tablet:h-16 desktop:h-20'
             autoFill
             direction='right'
           >
             <Image
-              className='-rotate-[2deg] px-3'
+              className='-rotate-[2deg] px-3 w-20 tablet:w-24 desktop:w-36'
               alt=''
               aria-hidden='true'
               src={CoronaWhitePlayIcon}
